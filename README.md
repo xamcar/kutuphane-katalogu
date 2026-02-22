@@ -1,16 +1,57 @@
-# React + Vite
+# 📚 Kişisel Kütüphane Kataloğu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Geniş fiziksel kitap arşivlerini dijital ortamda düzenli bir şekilde takip etmek ve organize etmek için geliştirilmiş, modern bir web (SPA) uygulaması. Uygulama, kullanıcının kitap eklemesine, durumlarını güncellemesine, silmesine ve gelişmiş filtreleme/arama seçenekleriyle koleksiyonunda kolayca gezinmesine olanak tanır. 
 
-Currently, two official plugins are available:
+Veriler tarayıcının `localStorage` hafızasında tutulduğu için herhangi bir veritabanı kurulumuna ihtiyaç duymadan anında çalışır.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 **Canlı Demo:** [Uygulamayı İncele](https://kutuphane-katalogu.netlify.app/)
 
-## React Compiler
+## ✨ Özellikler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **CRUD İşlemleri:** Yeni kitap ekleme, okuma durumunu güncelleme, listeleme ve silme.
+- **Hızlı Arama:** Kitap adı ve yazar adına göre anlık metin tabanlı arama.
+- **Detaylı Filtreleme:** Kitapları kategorilerine (Türk Edebiyatı, Tarih, Tasavvuf vb.) ve okuma durumlarına (Okundu, Okunuyor, Okunacak) göre filtreleme.
+- **Veri Kalıcılığı:** Tarayıcı `localStorage` entegrasyonu sayesinde sayfa yenilense dahi veriler kaybolmaz.
+- **Modern Arayüz:** Tailwind CSS ile tasarlanmış, tamamen duyarlı (responsive) ve kullanıcı dostu tasarım.
 
-## Expanding the ESLint configuration
+## 🛠️ Kullanılan Teknolojiler
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Kütüphane:** React (Vite)
+- **Stil:** Tailwind CSS (v4)
+- **Dil:** JavaScript
+- **Veri Yönetimi:** LocalStorage API
+
+## 💻 Kendi Bilgisayarınızda Çalıştırmak İçin (Local Setup)
+
+Projeyi kendi bilgisayarınızda çalıştırmak ve geliştirmek için aşağıdaki adımları izleyebilirsiniz:
+
+### Gereksinimler
+- Bilgisayarınızda **Node.js** yüklü olmalıdır.
+
+### Kurulum Adımları
+
+1. **Projeyi Klonlayın:**
+   ```bash
+   git clone [https://github.com/xamcar/kutuphane-katalogu.git](https://github.com/xamcar/kutuphane-katalogu.git)
+2. **Proje Klasörüne Girin:**
+   ```bash
+   cd kutuphane-katalogu
+3. **Bağımlılıkları Yükleyin:**
+   ```bash
+   npm install
+4. **Geliştirme Sunucusunu Başlatın:**
+   ```bash
+   npm run dev
+5. Tarayıcıda Açın:
+   Terminalde beliren yerel sunucu adresine giderek uygulamayı kullanmaya başlayabilirsiniz.
+
+📂 Proje Yapısı:
+src/
+├── Components/
+│   └── BookForm.jsx      # Yeni kitap ekleme formu ve kategori seçimleri
+├── Interfaces/
+│   └── bookData.js       # Başlangıç test verileri (Seed data)
+├── Pages/
+│   └── Dashboard.jsx     # Ana uygulama mantığı, listeleme, filtreleme ve arama 
+├── App.jsx               # Ana bileşen
+└── index.css             # Tailwind CSS entegrasyonu
