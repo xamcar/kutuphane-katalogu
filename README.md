@@ -45,13 +45,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak ve geliştirmek için aşağıd
 5. Tarayıcıda Açın:
    Terminalde beliren yerel sunucu adresine giderek uygulamayı kullanmaya başlayabilirsiniz.
 
-📂 Proje Yapısı:
-src/
-├── Components/
-│   └── BookForm.jsx      # Yeni kitap ekleme formu ve kategori seçimleri
-├── Interfaces/
-│   └── bookData.js       # Başlangıç test verileri (Seed data)
-├── Pages/
-│   └── Dashboard.jsx     # Ana uygulama mantığı, listeleme, filtreleme ve arama 
-├── App.jsx               # Ana bileşen
-└── index.css             # Tailwind CSS entegrasyonu
+PROJE EKRAN GÖRÜNTÜSÜ:
+<img width="1022" height="997" alt="kutuphane_1" src="https://github.com/user-attachments/assets/127d6103-fd62-4d53-b27e-5c7e87c8e620" />
+
+
